@@ -1,0 +1,115 @@
+.header{
+    color: rgb(255, 255, 255);
+    font-family: 'Unica One', sans-serif;
+    text-align: center;
+    text-shadow: 2px 2px 4px #2f1818;
+
+}
+
+.title{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://wallpapers.com/images/hd/1920-x-1080-nature-desktop-7uzi3zf1qeoosb63.jpg");
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 40px;
+}
+.play-button{
+    margin: 20px;
+    padding: 10px 20px;
+    font-size: 40px;
+    text-align: center;
+    background-color: rgba(196, 255, 180, 0.639);
+    font-family: 'Unica One', sans-serif;
+    border-radius: 8px;
+    border: 2px solid rgba(10, 68, 11, 0.807);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+    animation: bobbing 2s infinite;
+}
+
+.play-button:hover{
+    background-color: rgba(196, 255, 180, 0.939);
+    border-color: rgb(255, 255, 255);
+    box-shadow: 0 10px 20px rgba(255, 255, 255, 0.2);
+    cursor: pointer;
+}
+
+.play-button:active{
+    background-color: rgba(243, 64, 64, 0.939);
+    border-color: rgb(243, 64, 64, 0.939);
+    box-shadow: 0 10px 20px rgba(243, 64, 64, 0.939);
+}
+
+.specialMessage{
+    margin: auto;
+    padding: 10px 20px;
+    font-size: 40px;
+    text-align: center;
+    background-color: rgba(196, 255, 180, 0.639);
+    font-family: 'Unica One', sans-serif;
+    border-radius: 8px;
+    border: 2px solid rgba(10, 68, 11, 0.807);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+    align-self: center;
+    animation: bobbing2 2s infinite;
+
+}
+
+.specialMessage:hover{
+    background-color: rgba(196, 255, 180, 0.939);
+    border-color: rgb(255, 255, 255);
+    box-shadow: 0 10px 20px rgba(255, 255, 255, 0.2);
+    cursor: pointer;
+}
+
+.specialMessage:active{
+    background-color: rgba(243, 64, 64, 0.939);
+    border-color: rgb(243, 64, 64, 0.939);
+    box-shadow: 0 10px 20px rgba(243, 64, 64, 0.939);
+}
+
+
+@keyframes bobbing{
+    0%, 100%{
+        transform: translateY(20px);
+    }
+    50%{
+        transform: translateY(-60px);
+    }
+}
+
+@keyframes bobbing2{
+    0%, 100%{
+        transform: translateY(20px);
+    }
+    50%{
+        transform: translateY(80px);
+    }
+}
+
+
+.message{
+    color: rgb(255, 255, 255);
+    font-family: 'Unica One', sans-serif;
+    text-align: center;
+    text-shadow: 2px 2px 4px #2f1818;
+    font-size: 100px;
+}
+
+.animate{
+    animation: slideIn 2s forwards;
+}
+
+@keyframes slideIn{
+    from{
+        transform: translateY(250px);
+        opacity: 0;
+    }
+    to{
+        transform: translateY(00px);
+        opacity: 1;
+    }
+}
