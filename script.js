@@ -2,12 +2,13 @@ const playButton = document.getElementById('playButton');
 const message = document.getElementById('message');
 const specialSuprise = document.getElementById('specialMessage');
 specialSuprise.style.display = 'none';
+lyrics = document.getElementById('lyrics');
+lyrics.style.display = 'none';
 
-let agnisong = new Audio("agnisong.mp3");
+let agnisong = new Audio("Agni Song.mp3");
 
 function playMusic() {
     agnisong.play();
-
 }
 
 playButton.addEventListener('click', function() {
@@ -26,11 +27,14 @@ playButton.addEventListener('click', function() {
     }
     
     console.log(randomNumber);
+    lyrics.style.display = 'none';
     
 });
 
 specialMessage.addEventListener('click', function() {
-    alert('Surprise! You found the AGNI SPECIAL SONG CUZ I COULDNT FIND THE ORGINAL');
+    alert('Surprise! You found the AGNI SPECIAL SONG');
+    lyrics.style.display = 'block';
+    lyrics.classList.add('animate');
     playMusic();
 });
 
